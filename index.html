@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Math Exercice</title>
+        <link href='MathExercice.css' rel='stylesheet'/>
+    </head>
+    <body>
+        <div class='head'>
+            <span>Math Exercice</span>
+        </div>
+        <div class='exercice'>
+            <span id='calcul'></span>
+            <br/>
+            <input type='number' placeholder='0' disabled/><input type='button' id='send-calc' value='Send'/>
+            <div class='pad'>
+                <table>
+                    <tbody id='pad'>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class='progress'>
+            <p>
+                <progress max='2' value='0'></progress><span id='value-pro'></span>/<span id='max-pro'></span>
+                <div class='level-lives'>
+                    <span>Lives : <span id='lives'></span><span id='less-lives'>-1</span></span>
+                    <br/>
+                    <span>Level : <span id='level'></span><span id='next-level'>+1</span></span>
+                </div>
+            </p>
+        </div>
+        <script type='text/javascript' src='MathExercice.js'></script>
+        <script type='text/javascript'>
+            document.getElementById('lives').textContent = 3;
+            document.getElementById('level').textContent = 0;
+            document.getElementById('value-pro').textContent = document.querySelector('progress').value;
+            document.getElementById('max-pro').textContent = document.querySelector('progress').max;
+        </script>
+        <!--Loose msg-->
+        <div class='loose-msg'>
+            <span></span>
+        </div>
+    </body>
+</html>
