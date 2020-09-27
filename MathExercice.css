@@ -1,0 +1,293 @@
+html, body
+
+{
+
+    margin: 0;
+
+    padding: 0;
+
+    background: rgb(5, 5, 5);
+
+}
+
+body
+
+{
+
+    text-align: center;
+
+    font-family: sans-serif;
+
+    font-weight: 600;
+
+    color: #fff;
+
+}
+
+.head
+
+{
+
+    width: 100%;
+
+    font-size: 30px;
+
+    background: rgb(30, 30, 30);
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+}
+
+#calcul
+
+{
+
+    font-size: 30px;
+
+    font-family: monospace;
+
+    font-weight: 600;
+
+}
+
+input[type='number']
+
+{
+
+    padding: 10px;
+
+    width: 20%;
+
+    font-family: sans-serif;
+
+    font-weight: 400;
+
+    font-size: 25px;
+
+    color: #fff;
+
+    background: rgb(5, 5, 5);
+
+    border: none;
+
+    border-bottom: 3px solid rgb(30, 30, 30);
+
+    margin: 10px;
+
+}
+
+input[type='button']
+
+{
+
+    padding: 10px;
+
+    font-family: sans-serif;
+
+    font-weight: 400;
+
+    font-size: 18px;
+
+    color: #fff;
+
+    background: rgb(30, 30, 30);
+
+    border: 3px solid rgb(30, 30, 30);
+
+    border: none;
+
+    outline: none;
+
+}
+
+button
+
+{
+
+    padding: 25px;
+
+    font-family: sans-serif;
+
+    font-weight: 400;
+
+    font-size: 18px;
+
+    color: #fff;
+
+    background: rgb(30, 30, 30);
+
+    border: 3px solid rgb(30, 30, 30);
+
+    border: none;
+
+    outline: none;
+
+    margin: 0.5em;
+
+}
+
+table
+
+{
+
+    margin-left: auto; 
+
+    margin-right: auto;
+
+}
+
+progress
+
+{
+
+    -webkit-appearance: none;
+
+    appearance: none;
+
+    width: 250px;
+
+    height: 20px;
+
+}
+
+.level-lives
+
+{
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    font-family: sans-serif;
+
+    margin-right: 8%;
+
+}
+
+#less-lives
+
+{
+
+    color: #ff0000;
+
+    opacity: 0;
+
+}
+
+#next-level
+
+{
+
+    color: #adff2f;
+
+    opacity: 0;
+
+    margin-left: -8px;
+
+}
+
+@keyframes opAnimation
+
+{
+
+    from
+
+    {
+
+        opacity: 1;
+
+    }
+
+    to
+
+    {
+
+        opacity: 0;
+
+    }
+
+}
+
+@keyframes oof
+
+{
+
+    from
+
+    {
+
+        color: rgb(255, 0, 0);
+
+    }
+
+    to
+
+    {
+
+        color: #fff;
+
+    }
+
+}
+
+@keyframes win
+
+{
+
+    from
+
+    {
+
+        color: #adff2f;
+
+    }
+
+    to
+
+    {
+
+        color: #fff;
+
+    }
+
+}
+
+.loose-msg
+
+{
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+
+    padding: 12%;
+
+    background: #ff0000;
+
+    border: 5px solid #751717;
+
+    border-radius: 50px;
+
+    filter: grayscale(35%);
+
+    display: none;
+
+}
+
+.loose-msg span
+
+{
+
+    font-size: 5em;
+
+    font-family: monospace;
+
+    font-weight: 600;
+
+}
